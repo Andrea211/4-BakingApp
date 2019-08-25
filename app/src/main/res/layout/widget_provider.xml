@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWidgetBackground"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:id="@+id/ivWidgetRecipeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/recipe_icon"
+        android:cropToPadding="true"
+        android:src="@drawable/brownie" />
+
+    <TextView
+        android:id="@+id/widget_ingredients_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivWidgetRecipeIcon"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:background="@color/colorPrimary"
+        android:paddingStart="@dimen/margin_medium"
+        android:paddingEnd="@dimen/margin_medium"
+        android:text="@string/ingredients"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/h3">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/widget_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/widget_ingredients_name"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/colorPrimary"
+        android:paddingStart="@dimen/margin_medium"
+        android:paddingEnd="@dimen/margin_medium"
+        android:text="@string/ingredients_of_last_recipe"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/h5" />
+
+</RelativeLayout>

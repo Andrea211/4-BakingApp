@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name" translatable="false">BakingApp</string>
+
+    <string name="next_step">Next Step</string>
+    <string name="previous_step">Previous Step</string>
+
+    <string name="placeholder_image">Placeholder image</string>
+    <string name="kilogram_icon">Kilogram icon</string>
+
+    <string name="recipe_icon">Recipe icon</string>
+    <string name="amount_icon">Amount icon</string>
+
+    <string name="cooking_is_over">Congratulation! There\'re no steps left</string>
+    <string name="you_better_see_next_step">There\'s no previous step</string>
+
+    <string name="close_button_x">Close button X</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="exit">Exit</string>
+
+    <string name="ingredients">Ingredients</string>
+    <string name="ingredients_of_last_recipe">Here are ingredients for your last recipe</string>
+
+    <string name="button_ingredients">INGREDIENTS</string>
+    <string name="button_step">STEP-BY-STEP</string>
+
+    <string name="servings"> servings</string>
+
+</resources>

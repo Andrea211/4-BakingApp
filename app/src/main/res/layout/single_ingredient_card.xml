@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#9e9e9e"
+        android:contentDescription="@string/amount_icon"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </ImageView>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/ingredient_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cv_ingredient"
+        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatCheckBox>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cv_ingredient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_extra"
+        android:layout_marginBottom="@dimen/margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_scale"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_unit_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/kilogram_icon"
+                android:gravity="center"
+                app:srcCompat="@drawable/measure_kg" />
+
+            <TextView
+                android:id="@+id/tv_unit_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="@dimen/h2"
+                tools:text="5" />
+
+            <TextView
+                android:id="@+id/tv_unit_long_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorSecondaryText"
+                tools:text="Kilogram" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ingredient_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/h4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ll_scale"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Banana" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
